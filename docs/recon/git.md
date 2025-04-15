@@ -1,7 +1,7 @@
 ---
 title: Git
 parent: Recon
-nav_order: 3
+nav_order: 4
 ---
 
 - Can first check the `http://x.x.x.x/.git/config` and `http://x.x.x.x/.git/HEAD` for git information leak.
