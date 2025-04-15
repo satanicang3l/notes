@@ -21,6 +21,6 @@ nav_order: 3
   2. `cp /tmp/bbbbbbbb /tmp/hack/.git/objects/aa/`
   3. `cp /tmp/ccccccccc /tmp/hack/.git/objects/yy/`
 - Can continue to download all the files (using the file hash). Subsequently can use the command (need to combine the first 2 characters as well, don't separate):
-  git cat-file -p yyccccccccc
+  `git cat-file -p yyccccccccc`
 - After you clone a project (`git clone https://github.com/xx/yy`), cd to it and use `git log` to see the history of what has been changed.
 - `tig` is a very useful way to compare the files in the same directory. Just type `tig`(need to install if don't have it), then press enter on the file, then can scroll up and down to see the differences.
