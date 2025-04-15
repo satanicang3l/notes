@@ -1,6 +1,7 @@
 ---
 title: Port Scanning
 parent: Recon
+nav_order: 1
 ---
 
 1. AutoRecon: `autorecon -v IP`
