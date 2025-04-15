@@ -47,3 +47,5 @@ search:
 
 enable_copy_code_button: false
 nav_enabled: true
+plugins:
+  - jekyll-default-layout
