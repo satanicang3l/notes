@@ -13,3 +13,4 @@ parent: Recon
   - Backup: `nmap -p- --min-rate 5000 -sV IP2`
   - Default script: `sudo nmap -sC -sS -p0-65535 IP`
   - Limited scan (eg for 2 host): `nmap --top-ports=1000 -sT -Pn 10.5.5.1,2 --open`
+3. Test
