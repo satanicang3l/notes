@@ -1,5 +1,5 @@
 ---
 title: Password Cracking
 layout: default
-nav_order: 99
+nav_order: 7
 ---
