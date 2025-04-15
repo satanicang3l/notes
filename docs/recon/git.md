@@ -13,13 +13,13 @@ nav_order: 3
 - There should be a new commit for you to download from this new file, browse and download the `.git/objects/yy/ccccccccc` (first 2 characters being the folder)
 - (Optional) On this new one, use strings to read the content `ruby -rzlib -e 'print Zlib::Inflate.new.inflate(STDIN.read)' < ccccccccc | strings -a`
 - Create our own local repo:
-  `mkdir /tmp/hack`
-  `cd /tmp/hack`
-  `git init`
+  1. `mkdir /tmp/hack`
+  2. `cd /tmp/hack`
+  3. `git init`
 - Copy our files into it:
-  `mkdir -p .git/objects/aa .git/objects/yy`
-  `cp /tmp/bbbbbbbb /tmp/hack/.git/objects/aa/`
-  `cp /tmp/ccccccccc /tmp/hack/.git/objects/yy/`
+  1. `mkdir -p .git/objects/aa .git/objects/yy`
+  2. `cp /tmp/bbbbbbbb /tmp/hack/.git/objects/aa/`
+  3. `cp /tmp/ccccccccc /tmp/hack/.git/objects/yy/`
 - Can continue to download all the files (using the file hash). Subsequently can use the command (need to combine the first 2 characters as well, don't separate):
   git cat-file -p yyccccccccc
 - After you clone a project (`git clone https://github.com/xx/yy`), cd to it and use `git log` to see the history of what has been changed.
