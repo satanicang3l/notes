@@ -7,8 +7,8 @@ nav_order: 3
 - Can first check the `http://x.x.x.x/.git/config` and `http://x.x.x.x/.git/HEAD` for git information leak.
 - From the HEAD file, if it is referring to refs/heads/master, you can navigate to `.git/refs/heads/master`
 - This will provide you with a file hash. If the hash is aabbbbbbbb, browse to `.git/objects/aa/bbbbbbbb` (first 2 characters being the folder)
-- After downloading this file, use gzip to uncompress this file:
-    `printf "\x1f\x8b\x08\x00\x00\x00\x00\x00" |cat - bbbbbbbb |gzip -cd -q`
+- After downloading this file, use gzip to uncompress this file:  
+    `printf "\x1f\x8b\x08\x00\x00\x00\x00\x00" |cat - bbbbbbbb |gzip -cd -q`  
     `ruby -rzlib -e 'print Zlib::Inflate.new.inflate(STDIN.read)' < bbbbbbbb`
 - There should be a new commit for you to download from this new file, browse and download the `.git/objects/yy/ccccccccc` (first 2 characters being the folder)
 - (Optional) On this new one, use strings to read the content `ruby -rzlib -e 'print Zlib::Inflate.new.inflate(STDIN.read)' < ccccccccc | strings -a`
