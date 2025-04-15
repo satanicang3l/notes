@@ -1,5 +1,6 @@
 ---
 title: Port Scanning
+layout: default
 parent: Recon
 ---
 
