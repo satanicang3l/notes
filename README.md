@@ -1,6 +1,6 @@
 # just-the-docs-template
 
-This is a *bare-minimum* template to create a [Jekyll] site that:
+This is a *bare-minimum* template to create a [Jekyll] site that: 
 Site page: [Site]
 
 
