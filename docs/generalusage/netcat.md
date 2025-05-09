@@ -17,8 +17,8 @@ nav_order: 8
    `To: foo@example.com`\
    `Subject: Test`\
    `Date: Thu, 20 Dec 2012 12:00:00 +0000`\
-   ` `\
+   \
    `Content`\
    `.`\
-   ` `\
+   \
    `QUIT` to end
