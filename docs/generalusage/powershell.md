@@ -15,3 +15,13 @@ nav_order: 4
 3. Can also use dot: `. ./xx.ps1`
 4. If powershell unresponsive when go in:\
    `powershell.exe Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted`
+
+## Powershell Remote Command
+
+Need admin access.
+
+Enable powershell remoting on current machine:\
+`Enable-PSRemoting`
+
+Once you have the service: Using Powershell,\
+`Enter-PSSession computername`
