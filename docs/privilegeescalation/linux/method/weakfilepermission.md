@@ -1,6 +1,6 @@
 ---
 title: Weak File Permission
-parent: Method
+parent: Method (Linux)
 layout: default
 nav_order: 1
 ---

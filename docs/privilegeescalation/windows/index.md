@@ -1,5 +1,5 @@
 ---
-title: Windows
+title: Windows PE
 parent: Privilege Escalation
 grand_parent: Privilege Escalation
 layout: default

@@ -1,6 +1,6 @@
 ---
 title: Passwords and Keys
-parent: Method
+parent: Method (Linux)
 layout: default
 nav_order: 5
 ---

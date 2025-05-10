@@ -1,6 +1,6 @@
 ---
 title: Tomcat
-parent: Web
+parent: Web Passwords
 layout: default
 nav_order: 4
 ---

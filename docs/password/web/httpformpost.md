@@ -1,6 +1,6 @@
 ---
 title: HTTP Form POST
-parent: Web
+parent: Web Passwords
 layout: default
 nav_order: 1
 ---

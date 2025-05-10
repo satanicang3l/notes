@@ -1,6 +1,6 @@
 ---
 title: First Check
-parent: Linux
+parent: Linux PE
 layout: default
 nav_order: 2
 ---

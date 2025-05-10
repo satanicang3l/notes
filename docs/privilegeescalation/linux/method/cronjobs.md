@@ -1,6 +1,6 @@
 ---
 title: Cron Jobs
-parent: Method
+parent: Method (Linux)
 layout: default
 nav_order: 3
 ---

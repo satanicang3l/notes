@@ -1,6 +1,6 @@
 ---
 title: Auto Enumeration
-parent: Linux
+parent: Linux PE
 layout: default
 nav_order: 3
 ---

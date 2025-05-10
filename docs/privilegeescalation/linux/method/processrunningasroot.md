@@ -1,6 +1,6 @@
 ---
 title: Process Running As Root
-parent: Method
+parent: Method (Linux)
 layout: default
 nav_order: 8
 ---

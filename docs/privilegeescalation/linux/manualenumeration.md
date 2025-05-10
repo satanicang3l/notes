@@ -1,6 +1,6 @@
 ---
 title: Manual Enumeration
-parent: Linux
+parent: Linux PE
 layout: default
 nav_order: 4
 ---

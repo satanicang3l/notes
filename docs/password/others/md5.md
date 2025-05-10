@@ -1,6 +1,6 @@
 ---
 title: MD5
-parent: Others
+parent: Other Passwords
 layout: default
 nav_order: 8
 ---

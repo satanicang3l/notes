@@ -1,6 +1,6 @@
 ---
 title: HTPASSWD
-parent: Web
+parent: Web Passwords
 layout: default
 nav_order: 5
 ---

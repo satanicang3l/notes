@@ -1,6 +1,6 @@
 ---
 title: SUID / SGID
-parent: Method
+parent: Method (Linux)
 layout: default
 nav_order: 4
 ---
