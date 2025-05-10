@@ -2,7 +2,7 @@
 title: Auto Enumeration
 parent: Linux PE
 layout: default
-nav_order: 3
+nav_order: 2
 ---
 
 1. Linpeas:\

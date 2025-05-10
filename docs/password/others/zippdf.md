@@ -1,5 +1,5 @@
 ---
-title: VNC
+title: ZIP / PDF / RAR
 parent: Other Passwords
 layout: default
 nav_order: 6

@@ -1,7 +1,7 @@
 ---
-title: Method (Linux)
-parent: Linux PE
+title: Method (Windows)
+parent: Windows PE
 grand_parent: Privilege Escalation
 layout: default
-nav_order: 4
+nav_order: 3
 ---

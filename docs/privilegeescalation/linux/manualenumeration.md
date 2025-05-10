@@ -2,7 +2,7 @@
 title: Manual Enumeration
 parent: Linux PE
 layout: default
-nav_order: 4
+nav_order: 3
 ---
 
 1. use `id` to find out about user and group info. `cat /etc/passwd` to find out about other users.

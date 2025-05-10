@@ -2,7 +2,7 @@
 title: First Check
 parent: Linux PE
 layout: default
-nav_order: 2
+nav_order: 1
 ---
 
 1. Sudo can run:\
