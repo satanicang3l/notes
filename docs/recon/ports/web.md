@@ -7,6 +7,7 @@ nav_order: 1
 - Check `robots.txt`, `sitemap.xml`, `.htaccess`, `.htpasswd`
 - Directory discovery (Gobuster): `gobuster dir -w /usr/share/seclists/Discovery/Web-Content/raft-medium-words.txt -x html,php,txt -b 403,404 -u target -f --proxy socks5://IP:PORT --no-tls-validation -U username -P password --exclude-length xx`
 - Directory discovery (Dirb): `dirb http://IP -r -z 10` (remove -r for recursive scan)
+- Directory discovery (ffuf): `ffuf -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-small.txt:FUZZ -u http://SERVER_IP:PORT/FUZZ -recursion -recursion-depth 1 -e .php -v`
 - Web scanner (Nikto): `nikto -host=http://IP`
 - Subdomain discovery: `gobuster vhost -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -u http://thetoppers.htb`
 - Subdomain discovery (DNS): `gobuster dns -i -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt -d thetoppers.htb`
