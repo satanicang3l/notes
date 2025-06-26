@@ -9,7 +9,7 @@ Enabling restricted admin (to use RDP):\
 `New-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Lsa'  -Name 'DisableRestrictedAdmin' -Value 0 -PropertyType DWORD`
 
 Firewall for RDP:\
-`Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -name "fDenyTSConnections" -value 0 Enable-NetFirewallRule -DisplayGroup "Remote Desktop"`
+`Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -name "fDenyTSConnections" -value 0;Enable-NetFirewallRule -DisplayGroup "Remote Desktop"`
 
 Add yourself to be able to remote (both works):\
 `net localgroup "Remote Desktop Users" "UserName" /add`\
