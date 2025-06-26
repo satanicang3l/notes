@@ -55,7 +55,7 @@ If <b>double pivot</b> is required (you have proxy on the first victim already, 
 `ifconfig`
 
 7. Based on the results above, use the following command (in linux not ligolo interface!). In this example the second victim internal network ipv4 is 10.1.30.132/24:\
-`sudo ip add route 10.1.30.0/24 dev ligolo2`
+`sudo ip route add 10.1.30.0/24 dev ligolo2`
 
 8. In ligolo interface with the selected agent, run\
 `tunnel_start --tun ligolo2`
