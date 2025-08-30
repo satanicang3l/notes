@@ -5,7 +5,7 @@ layout: default
 nav_order: 15
 ---
 
-1. Basic check on the card:\ 
+1. Basic check on the card:\
    `iwconfig`.
 2. Check country set for the card:\
    `iw reg get`
