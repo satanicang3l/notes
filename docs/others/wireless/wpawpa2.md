@@ -5,7 +5,7 @@ layout: default
 nav_order: 3
 ---
 
-You can disable monitor mode anytime with `sudo airmon-ng stop wlan0mon`
+You can disable monitor mode anytime with `sudo airmon-ng stop wlan0mon`\
 If want to browse without GUI use `wget -qO- http://random`
 
 ## 4-Way Handshake
